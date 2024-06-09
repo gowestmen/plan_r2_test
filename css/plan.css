@@ -27,7 +27,7 @@ header {
   left: 0;
   width: 100vw;
   height: 130px;
-  background: url('css/icons/img_fd_plan.jpg') no-repeat; /* Image de fond */
+  background: url('icons/img_fd_plan.jpg') no-repeat; /* Image de fond */
   background-size: cover; /* Taille de l'image de fond */
 }
 
@@ -246,18 +246,18 @@ h1.sitename {
 
 /* Styles pour la boussole dans le groupe de contrôles maplibregl */
 .maplibregl-ctrl-icon.maplibregl-ctrl-compass > .maplibregl-ctrl-compass-arrow {
-  background-image: url("css/icons/plan_boussole.svg"); /* Image de fond */
+  background-image: url("icons/plan_boussole.svg"); /* Image de fond */
   margin-left: 40%; /* Marge à gauche */
 }
 
 /* Styles pour le bouton de zoom avant dans maplibregl */
 .maplibregl-ctrl-icon.maplibregl-ctrl-zoom-in {
-  background-image: url("css/icons/plan_zoom_plus.svg"); /* Image de fond */
+  background-image: url("icons/plan_zoom_plus.svg"); /* Image de fond */
 }
 
 /* Styles pour le bouton de zoom arrière dans maplibregl */
 .maplibregl-ctrl-icon.maplibregl-ctrl-zoom-out {
-  background-image: url("css/icons/plan_zoom_moins.svg"); /* Image de fond */
+  background-image: url("icons/plan_zoom_moins.svg"); /* Image de fond */
 }
 
 /* Styles pour l'entrée de recherche easy-autocomplete */
@@ -546,7 +546,7 @@ color: green;
 }
 
 .btn-imprimer {
-  background-image: 'css/icons/printer.svg';
+  background-image: url('icons/printer.svg');
   background-size: 30px 30px; /* Taille de l'image de fond */
   background-position: 50% 50%; /* Position de l'image de fond */
   background-color: #073763;
@@ -608,7 +608,7 @@ color: green;
   color: #fff; /* Couleur du texte */
   height: 60px; /* Hauteur */
   width: 60px; /* Largeur */
-  background-image: url('css/icons/plan_loupe.svg'); /* Image de fond */
+  background-image: url('icons/plan_loupe.svg'); /* Image de fond */
   background-position: 50% 50%; /* Position de l'image de fond */
   background-repeat: no-repeat; /* Pas de répétition de l'image de fond */
   background-size: 20px 20px; /* Taille de l'image de fond */
@@ -617,7 +617,7 @@ color: green;
 
 /* Styles pour le bouton de recherche avec l'ID searchButton et la classe search-active */
 #searchButton.btn-primary.search-active {
-  background-image: url('css/icons/cross_blanc.svg'); /* Image de fond */
+  background-image: url('icons/cross_blanc.svg'); /* Image de fond */
 }
 
 
@@ -733,7 +733,7 @@ color: green;
 
 /* Styles pour les cases à cocher */
 .case {
-  background-image: url('css/icons/checkbox_off.svg'); /* Image de fond */
+  background-image: url('icons/checkbox_off.svg'); /* Image de fond */
   background-repeat: no-repeat; /* Pas de répétition */
   background-size: 14px 14px; /* Taille de l'image de fond */
   background-position: 10px center; /* Position de l'image de fond */
@@ -741,13 +741,13 @@ color: green;
 
 /* Styles pour les cases à cocher actives */
 .case.active {
-  background-image: url('css/icons/checkbox_on.svg'); /* Image de fond */
+  background-image: url('icons/checkbox_on.svg'); /* Image de fond */
   background-color: #fff; /* Couleur de fond */
 }
 
 /* Styles pour les cases à cocher actives dans un menu déroulant */
 .collapse .nav-second-level li.active .case.active {
-  background-image: url('css/icons/checkbox_on.svg'); /* Image de fond */
+  background-image: url('icons/checkbox_on.svg'); /* Image de fond */
   background-color: #fff; /* Couleur de fond */
 }
 
@@ -779,7 +779,7 @@ button#clearSubMenuBtn:hover {
 
 /* Styles pour les boutons radio */
 .leaf {
-  background-image: url('css/icons/radio_off.svg'); /* Image de fond */
+  background-image: url('icons/radio_off.svg'); /* Image de fond */
   background-size: 14px 14px; /* Taille de l'image de fond */
   background-color: #F4F5F5; /* Couleur de fond */
   background-repeat: no-repeat; /* Pas de répétition */
@@ -789,7 +789,7 @@ button#clearSubMenuBtn:hover {
 /* Styles pour les boutons radio actifs */
 .leaf.active {
   background-color: #fff; /* Couleur de fond */
-  background-image: url('css/icons/radio_on.svg'); /* Image de fond */
+  background-image: url('icons/radio_on.svg'); /* Image de fond */
 }
 
 
@@ -856,7 +856,7 @@ button#clearSubMenuBtn:hover {
 /* LES BOUTONS DE CONTROLES MAPLIBRE */
 /* Styles pour le contrôle de géolocalisation de mapbox */
 .maplibregl-ctrl-icon.maplibregl-ctrl-geolocate {
-  background-image: url("css/icons/plan_localisation.svg"); /* Image de fond */
+  background-image: url("icons/plan_localisation.svg"); /* Image de fond */
   background-size: 20px 20px; /* Taille de l'image de fond */
   background-repeat: no-repeat; /* Pas de répétition */
   background-position: center center; /* Position de l'image de fond */
