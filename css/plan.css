@@ -246,18 +246,18 @@ h1.sitename {
 
 /* Styles pour la boussole dans le groupe de contrôles maplibregl */
 .maplibregl-ctrl-icon.maplibregl-ctrl-compass > .maplibregl-ctrl-compass-arrow {
-  background-image: url("icons/plan_boussole.svg"); /* Image de fond */
+  background-image: url("css/icons/plan_boussole.svg"); /* Image de fond */
   margin-left: 40%; /* Marge à gauche */
 }
 
 /* Styles pour le bouton de zoom avant dans maplibregl */
 .maplibregl-ctrl-icon.maplibregl-ctrl-zoom-in {
-  background-image: url("icons/plan_zoom_plus.svg"); /* Image de fond */
+  background-image: url("css/icons/plan_zoom_plus.svg"); /* Image de fond */
 }
 
 /* Styles pour le bouton de zoom arrière dans maplibregl */
 .maplibregl-ctrl-icon.maplibregl-ctrl-zoom-out {
-  background-image: url("icons/plan_zoom_moins.svg"); /* Image de fond */
+  background-image: url("css/icons/plan_zoom_moins.svg"); /* Image de fond */
 }
 
 /* Styles pour l'entrée de recherche easy-autocomplete */
@@ -856,7 +856,7 @@ button#clearSubMenuBtn:hover {
 /* LES BOUTONS DE CONTROLES MAPLIBRE */
 /* Styles pour le contrôle de géolocalisation de mapbox */
 .maplibregl-ctrl-icon.maplibregl-ctrl-geolocate {
-  background-image: url("icons/plan_localisation.svg"); /* Image de fond */
+  background-image: url("css/icons/plan_localisation.svg"); /* Image de fond */
   background-size: 20px 20px; /* Taille de l'image de fond */
   background-repeat: no-repeat; /* Pas de répétition */
   background-position: center center; /* Position de l'image de fond */
