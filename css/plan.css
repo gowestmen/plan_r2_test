@@ -546,7 +546,7 @@ color: green;
 }
 
 .btn-imprimer {
-  background-image: url('css/icons/printer.svg');
+  background-image: 'css/icons/printer.svg';
   background-size: 30px 30px; /* Taille de l'image de fond */
   background-position: 50% 50%; /* Position de l'image de fond */
   background-color: #073763;
