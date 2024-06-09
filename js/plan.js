@@ -882,46 +882,46 @@ function afficherPopupObjet(selectedObjet) {
   const getGeoJSON = (nomFichier) => fetch(nomFichier).then(res => res.json()).then(res => res.features);
   
   const geojsons = [
-  getGeoJSON("../data/filtre/acces_PMR.geojson"),
-  getGeoJSON("../data/filtre/amphi.geojson"),
-  getGeoJSON("../data/filtre/arret_bus_pts.geojson"),
-  getGeoJSON("../data/filtre/arret_metro_pts.geojson"),
-  getGeoJSON("../data/filtre/ascenseur.geojson"),
-  getGeoJSON("../data/filtre/asso_art_spor.geojson"),
-  getGeoJSON("../data/filtre/asso_filiere.geojson"),
-  getGeoJSON("../data/filtre/asso_mstr_doc.geojson"),
-  getGeoJSON("../data/filtre/asso_solidarite.geojson"),
-  getGeoJSON("../data/filtre/biblio.geojson"),
-  getGeoJSON("../data/filtre/cafet_distrib.geojson"),
-  getGeoJSON("../data/filtre/copieur.geojson"),
-  getGeoJSON("../data/filtre/entree_bat.geojson"), 
-  getGeoJSON("../data/filtre/entree_campus.geojson"),
-  getGeoJSON("../data/filtre/eqpmt_sportif.geojson"),
-  getGeoJSON("../data/filtre/esp_detente.geojson"),
-  getGeoJSON("../data/filtre/labo.geojson"),
-  getGeoJSON("../data/filtre/lieu_cultu.geojson"),
-  getGeoJSON("../data/filtre/micro_ondes.geojson"),
-  getGeoJSON("../data/filtre/oeuvres.geojson"),
-  getGeoJSON("../data/filtre/parking_velo.geojson"),
-  getGeoJSON("../data/filtre/parking_voiture.geojson"),
-  getGeoJSON("../data/filtre/resid_univ.geojson"),
-  getGeoJSON("../data/filtre/ru.geojson"),
-  getGeoJSON("../data/filtre/salle_e0.geojson"),
-  getGeoJSON("../data/filtre/salle_e1.geojson"),
-  getGeoJSON("../data/filtre/salle_e2.geojson"),
-  getGeoJSON("../data/filtre/salle_e3.geojson"),
-  getGeoJSON("../data/filtre/salle_e4.geojson"),
-  getGeoJSON("../data/filtre/salle_e5.geojson"),
-  getGeoJSON("../data/filtre/salle_e6.geojson"),
-  getGeoJSON("../data/filtre/salle_e7.geojson"),
-  getGeoJSON("../data/filtre/salle_info.geojson"),
-  getGeoJSON("../data/filtre/salle_spe.geojson"),
-  getGeoJSON("../data/filtre/sante.geojson"),
-  getGeoJSON("../data/filtre/scol.geojson"),
-  getGeoJSON("../data/filtre/services.geojson"),
-  getGeoJSON("../data/filtre/station_velostar.geojson"),
-  getGeoJSON("../data/filtre/wc.geojson"),
-  getGeoJSON("../data/fondcarte/lettre_batiment.geojson")
+  getGeoJSON("data/filtre/acces_PMR.geojson"),
+  getGeoJSON("data/filtre/amphi.geojson"),
+  getGeoJSON("data/filtre/arret_bus_pts.geojson"),
+  getGeoJSON("data/filtre/arret_metro_pts.geojson"),
+  getGeoJSON("data/filtre/ascenseur.geojson"),
+  getGeoJSON("data/filtre/asso_art_spor.geojson"),
+  getGeoJSON("data/filtre/asso_filiere.geojson"),
+  getGeoJSON("data/filtre/asso_mstr_doc.geojson"),
+  getGeoJSON("data/filtre/asso_solidarite.geojson"),
+  getGeoJSON("data/filtre/biblio.geojson"),
+  getGeoJSON("data/filtre/cafet_distrib.geojson"),
+  getGeoJSON("data/filtre/copieur.geojson"),
+  getGeoJSON("data/filtre/entree_bat.geojson"), 
+  getGeoJSON("data/filtre/entree_campus.geojson"),
+  getGeoJSON("data/filtre/eqpmt_sportif.geojson"),
+  getGeoJSON("data/filtre/esp_detente.geojson"),
+  getGeoJSON("data/filtre/labo.geojson"),
+  getGeoJSON("data/filtre/lieu_cultu.geojson"),
+  getGeoJSON("data/filtre/micro_ondes.geojson"),
+  getGeoJSON("data/filtre/oeuvres.geojson"),
+  getGeoJSON("data/filtre/parking_velo.geojson"),
+  getGeoJSON("data/filtre/parking_voiture.geojson"),
+  getGeoJSON("data/filtre/resid_univ.geojson"),
+  getGeoJSON("data/filtre/ru.geojson"),
+  getGeoJSON("data/filtre/salle_e0.geojson"),
+  getGeoJSON("data/filtre/salle_e1.geojson"),
+  getGeoJSON("data/filtre/salle_e2.geojson"),
+  getGeoJSON("data/filtre/salle_e3.geojson"),
+  getGeoJSON("data/filtre/salle_e4.geojson"),
+  getGeoJSON("data/filtre/salle_e5.geojson"),
+  getGeoJSON("data/filtre/salle_e6.geojson"),
+  getGeoJSON("data/filtre/salle_e7.geojson"),
+  getGeoJSON("data/filtre/salle_info.geojson"),
+  getGeoJSON("data/filtre/salle_spe.geojson"),
+  getGeoJSON("data/filtre/sante.geojson"),
+  getGeoJSON("data/filtre/scol.geojson"),
+  getGeoJSON("data/filtre/services.geojson"),
+  getGeoJSON("data/filtre/station_velostar.geojson"),
+  getGeoJSON("data/filtre/wc.geojson"),
+  getGeoJSON("data/fondcarte/lettre_batiment.geojson")
   ];
   
   const finalGeoJSON = {
@@ -1123,8 +1123,8 @@ function afficherPopupObjet(selectedObjet) {
   }
 
   ///////////////////////////////////////  initialisation des variables overlay //////////////////////////////////
-  //var case1 = '../css/icons/case1.png'; // Lien vers l'image case non cochée
-  //var case2 = '../css/icons/case2.png'; // Lien vers l'image case cochée
+  //var case1 = 'css/icons/case1.png'; // Lien vers l'image case non cochée
+  //var case2 = 'css/icons/case2.png'; // Lien vers l'image case cochée
 
   // Taille overlay:
   var tailleMarker = [1, 13, 0.1, 25, 1.5]; // taille adaptative des éléments type marker /!\ NE PAS MODIFIER : pour toute modification de taille, changer la taille du .png
@@ -1143,40 +1143,40 @@ function afficherPopupObjet(selectedObjet) {
   var amphiCount = 0; // initialisation du compteur
   var amphitheatresLink = document.getElementById('Amphithéâtre'); // Recherche de la balise html liée à la couche
   Etiquette.push('Amphithéâtre'); // Ajout des etiquettes
-  var amphiURL = '../css/icons/layers_icons/amphi_marker.png';
+  var amphiURL = 'css/icons/layers_icons/amphi_marker.png';
   
   // Salles informatique
   var sallesInfoCount = 0;
   var sallesInfoLink = document.getElementById('Salle informatique');
-  var sallesInfoURL = '../css/icons/layers_icons/salle_info_marker.png';
+  var sallesInfoURL = 'css/icons/layers_icons/salle_info_marker.png';
   
   // Salles spécifiques
   var sallesSpeCount = 0;
   var listeSallesSpecifiques = []; // Création dynamique de la liste des salles à partir du jeu de données
   var sallesSpecifiquesLink = document.getElementById('Salles spécifiques');
   var insertSallesSpecifiques = document.getElementById('insertSallesSpecifiques');
-  var sallesSpeURL = '../css/icons/layers_icons/sallespe_marker.png';
+  var sallesSpeURL = 'css/icons/layers_icons/sallespe_marker.png';
   
   // Services centraux
   var ServicescenCount = 0;
   var listeServicescen = []; // Création dynamique de la liste des salles à partir du jeu de données
   var ServicescenLink = document.getElementById('Services centraux');
   var insertServicescen = document.getElementById('insertServicescen');
-  var ServicescenURL = '../css/icons/layers_icons/servicescen_marker.png';
+  var ServicescenURL = 'css/icons/layers_icons/servicescen_marker.png';
   
   // Services communs
   var ServicescomCount = 0;
   var listeServicescom = []; // Création dynamique de la liste des salles à partir du jeu de données
   var ServicescomLink = document.getElementById('Services communs');
   var insertServicescom = document.getElementById('insertServicescom');
-  var ServicescomURL = '../css/icons/layers_icons/servicescom_marker.png';
+  var ServicescomURL = 'css/icons/layers_icons/servicescom_marker.png';
   
   // Services généraux
   var ServicesgenCount = 0;
   var listeServicesgen = []; // Création dynamique de la liste des salles à partir du jeu de données
   var ServicesgenLink = document.getElementById('Services généraux');
   var insertServicesgen = document.getElementById('insertServicesgen');
-  var ServicesgenURL = '../css/icons/layers_icons/servicesgen_marker.png';
+  var ServicesgenURL = 'css/icons/layers_icons/servicesgen_marker.png';
   
   //formations
   // Formation UFR Sciences Humaines
@@ -1184,37 +1184,37 @@ function afficherPopupObjet(selectedObjet) {
   var listeFUFRSH = [];
   var FUFRSHLink = document.getElementById('Formation UFRSH');
   var insertFUFRSH = document.getElementById('insertFUFRSH');
-  var FUFRSHURL = '../css/icons/layers_icons/formation_marker.png';
+  var FUFRSHURL = 'css/icons/layers_icons/formation_marker.png';
   // Formation UFR Langue
   var FUFRLCount = 0;
   var listeFUFRL = [];
   var FUFRLLink = document.getElementById('Formation UFRL');
   var insertFUFRL = document.getElementById('insertFUFRL');
-  var FUFRLURL = '../css/icons/layers_icons/formation_marker.png';
+  var FUFRLURL = 'css/icons/layers_icons/formation_marker.png';
   // Formation UFR Sciences Sociales
   var FUFRSSCount = 0;
   var listeFUFRSS = [];
   var FUFRSSLink = document.getElementById('Formation UFRSS');
   var insertFUFRSS = document.getElementById('insertFUFRSS');
-  var FUFRSSURL = '../css/icons/layers_icons/formation_marker.png';
+  var FUFRSSURL = 'css/icons/layers_icons/formation_marker.png';
   // Formation UFR STAPS
   var FUFRSTAPSCount = 0;
   var listeFUFRSTAPS = [];
   var FUFRSTAPSLink = document.getElementById('Formation UFRSTAPS');
   var insertFUFRSTAPS = document.getElementById('insertFUFRSTAPS');
-  var FUFRSTAPSURL = '../css/icons/layers_icons/formation_marker.png';
+  var FUFRSTAPSURL = 'css/icons/layers_icons/formation_marker.png';
   // Formation UFR ALC
   var FUFRALCCount = 0;
   var listeFUFRALC = [];
   var FUFRALCLink = document.getElementById('Formation UFRALC');
   var insertFUFRALC = document.getElementById('insertFUFRALC');
-  var FUFRALCURL = '../css/icons/layers_icons/formation_marker.png';
+  var FUFRALCURL = 'css/icons/layers_icons/formation_marker.png';
   // Autres structures de Formation
   var AutresFormationsCount = 0;
   var listeAutresFormations = [];
   var AutresFormationsLink = document.getElementById('Autres Formations');
   var insertAutresFormations = document.getElementById('insertAutresFormations');
-  var AutresFormationsURL = '../css/icons/layers_icons/formation_marker.png';
+  var AutresFormationsURL = 'css/icons/layers_icons/formation_marker.png';
 
   // recherche
   // Recherche UFR Sciences Sociales
@@ -1222,132 +1222,132 @@ function afficherPopupObjet(selectedObjet) {
   var listeRUFRSS = [];
   var RUFRSSLink = document.getElementById('Recherche UFRSS');
   var insertRUFRSS = document.getElementById('insertRUFRSS');
-  var RUFRSSURL = '../css/icons/layers_icons/recherche_marker.png';
+  var RUFRSSURL = 'css/icons/layers_icons/recherche_marker.png';
   // Recherche UFR STAPS
   var RUFRSTAPSCount = 0;
   var listeRUFRSTAPS = [];
   var RUFRSTAPSLink = document.getElementById('Recherche UFRSTAPS');
   var insertRUFRSTAPS = document.getElementById('insertRUFRSTAPS');
-  var RUFRSTAPSURL = '../css/icons/layers_icons/recherche_marker.png';
+  var RUFRSTAPSURL = 'css/icons/layers_icons/recherche_marker.png';
   // Recherche UFR ALC
   var RUFRALCCount = 0;
   var listeRUFRALC = [];
   var RUFRALCLink = document.getElementById('Recherche UFRALC');
   var insertRUFRALC = document.getElementById('insertRUFRALC');
-  var RUFRALCURL = '../css/icons/layers_icons/recherche_marker.png';
+  var RUFRALCURL = 'css/icons/layers_icons/recherche_marker.png';
   // Recherche UFR Langues
   var RUFRLCount = 0;
   var listeRUFRL = [];
   var RUFRLLink = document.getElementById('Recherche UFRL');
   var insertRUFRL = document.getElementById('insertRUFRL');
-  var RUFRLURL = '../css/icons/layers_icons/recherche_marker.png';
+  var RUFRLURL = 'css/icons/layers_icons/recherche_marker.png';
   // Recherche UFR Sciences Humaines
   var RUFRSHCount = 0;
   var listeRUFRSH = [];
   var RUFRSHLink = document.getElementById('Recherche UFRSH');
   var insertRUFRSH = document.getElementById('insertRUFRSH');
-  var RUFRSHURL = '../css/icons/layers_icons/recherche_marker.png';
+  var RUFRSHURL = 'css/icons/layers_icons/recherche_marker.png';
 
   // Bibliothèques
   var bibliothequesCount = 0; // initialisation du compteur de clics
   var bibliothequesLink = document.getElementById("Bibliothèques");
-  var bibliothequesURL = '../css/icons/layers_icons/biblio_marker.png';
+  var bibliothequesURL = 'css/icons/layers_icons/biblio_marker.png';
 
   // Lieux culturels
   var lieuCulturelCount = 0; // initialisation du compteur de clics
   var lieuCulturelLink = document.getElementById('Lieux culturels');
   var listelieuCulturel = []; // Création dynamique de la liste des salles à partir du jeu de données
   var insertLieuCulturel = document.getElementById('insertLieuCulturel');
-  var lieuCulturelURL = '../css/icons/layers_icons/culture_marker.png';
+  var lieuCulturelURL = 'css/icons/layers_icons/culture_marker.png';
 
   // Oeuvres d'arts
   var oeuvreArtsCount = 0; // initialisation du compteur de clics
   var oeuvreArtsLink = document.getElementById('Oeuvre');
-  var oeuvreArtsURL = '../css/icons/layers_icons/oeuvre_marker.png';
+  var oeuvreArtsURL = 'css/icons/layers_icons/oeuvre_marker.png';
 
   // Equipements sportifs
   var equipementSportifCount = 0; // initialisation du compteur de clics
   var equipementSportifLink = document.getElementById('Equipement sportif');
-  var equipementSportifURL = '../css/icons/layers_icons/sport_marker.png';
+  var equipementSportifURL = 'css/icons/layers_icons/sport_marker.png';
 
   // Toilettes
   var toilettesCount = 0; // initialisation du compteur de clics
   var toilettesLink = document.getElementById('wc');
-  var toilettesURL = '../css/icons/layers_icons/wc_marker.png';
+  var toilettesURL = 'css/icons/layers_icons/wc_marker.png';
 
   // Copieurs
   var copieurCount = 0; // initialisation du compteur de clics
   var copieurLink = document.getElementById('Copieur');
-  var copieursURL = '../css/icons/layers_icons/copieur_marker.png';
+  var copieursURL = 'css/icons/layers_icons/copieur_marker.png';
 
   // Espace détente
   var espaceDetenteCount = 0; // initialisation du compteur de clics
   var espaceDetenteLink = document.getElementById('Espace détente');
-  var espaceDetenteURL = '../css/icons/layers_icons/espacedetente_marker.png';
+  var espaceDetenteURL = 'css/icons/layers_icons/espacedetente_marker.png';
 
   // Cafeterias
   var cafeteriasCount = 0; // initialisation du compteur de clics
   var cafeteriasLink = document.getElementById('Cafétéria');
-  var cafeteriasURL = '../css/icons/layers_icons/cafeteria_marker.png';
+  var cafeteriasURL = 'css/icons/layers_icons/cafeteria_marker.png';
 
   // Micro-ondes
   var microOndesCount = 0; // initialisation du compteur de clics
   var microOndesLink = document.getElementById('Micro-ondes');
-  var microOndesURL = '../css/icons/layers_icons/microondes_marker.png';
+  var microOndesURL = 'css/icons/layers_icons/microondes_marker.png';
 
   // Résidences universitaires
   var resUnivCount = 0; // initialisation du compteur de clics
   var resUnivLink = document.getElementById("Résidence Universitaire");
-  var resUnivURL = '../css/icons/layers_icons/resuniv_marker.png';
+  var resUnivURL = 'css/icons/layers_icons/resuniv_marker.png';
 
   // Restaurants universitaires
   var restoUnivCount = 0; // initialisation du compteur de clics
   var restoUnivLink = document.getElementById("Restaurant Universitaire");
-  var restoUnivURL = '../css/icons/layers_icons/restauu_marker.png';
+  var restoUnivURL = 'css/icons/layers_icons/restauu_marker.png';
 
   // Associations de filières
   var associationsfilieresCount = 0; // initialisation du compteur de clics
   var associationsfilieresLink = document.getElementById('Associations de filières');
-  var associationsfilieresURL = '../css/icons/layers_icons/association_marker.png';
+  var associationsfilieresURL = 'css/icons/layers_icons/association_marker.png';
 
   // Associations de Masters et Doctorats
   var associationsmasterCount = 0; // initialisation du compteur de clics
   var associationsmasterLink = document.getElementById('Associations de Masters et Doctorats');
-  var associationsmasterURL = '../css/icons/layers_icons/association_marker2.png';
+  var associationsmasterURL = 'css/icons/layers_icons/association_marker2.png';
 
   // // Associations briochines
   // var associationsbriochinesCount = 0; // initialisation du compteur de clics
   // var associationsbriochinesLink = document.getElementById('Associations briochines');
-  // var associationsbriochinesURL = '../css/icons/layers_icons/association_marker3.png';
+  // var associationsbriochinesURL = 'css/icons/layers_icons/association_marker3.png';
 
   // Associations culturelles, artistiques et sportives
   var associationscasCount = 0; // initialisation du compteur de clics
   var associationscasLink = document.getElementById('Associations culturelles, artistiques et sportives');
-  var associationscasURL = '../css/icons/layers_icons/association_marker4.png';
+  var associationscasURL = 'css/icons/layers_icons/association_marker4.png';
 
   // Associations de solidarité et de sensibilisation
   var associationssolidariteCount = 0; // initialisation du compteur de clics
   var associationssolidariteLink = document.getElementById('Associations de solidarité et de sensibilisation');
-  var associationssolidariteURL = '../css/icons/layers_icons/association_marker5.png';
+  var associationssolidariteURL = 'css/icons/layers_icons/association_marker5.png';
 
   // // Associations autres
   // var associationsCount = 0; // initialisation du compteur de clics
   // var associationsLink = document.getElementById('Autres');
-  // var associationsURL = '../css/icons/layers_icons/association_marker6.png';
+  // var associationsURL = 'css/icons/layers_icons/association_marker6.png';
 
   // Ascenseur
   var ascenseurCount = 0; // initialisation du compteur de clics
   var ascenseurLink = document.getElementById('Ascenseur');
-  var ascenseurURL = '../css/icons/layers_icons/ascenseur.png';
+  var ascenseurURL = 'css/icons/layers_icons/ascenseur.png';
 
   // Parking
   var parkingCount = 0; // initialisation du compteur de clics
   var parkingLink = document.getElementById('Parking');
-  var parkingURL = '../css/icons/layers_icons/paking_picto.png';
+  var parkingURL = 'css/icons/layers_icons/paking_picto.png';
 
   // Parking PMR
   var parkingPMRCount = 0; // initialisation du compteur de clics
-  var parkingPMRURL = '../css/icons/layers_icons/parkingH_picto.png';
+  var parkingPMRURL = 'css/icons/layers_icons/parkingH_picto.png';
 
   // Parking vélo
   var parkingVeloCount = 0; // initialisation du compteur de clics
@@ -1358,28 +1358,28 @@ function afficherPopupObjet(selectedObjet) {
    // Entrée campus
    var entree_campusLink = document.getElementById('Entrée campus');
    var entree_campusCount = 0; // initialisation du compteur de clics
-   var entree_campusURL = '../css/icons/layers_icons/entrée_campus_2.png';
+   var entree_campusURL = 'css/icons/layers_icons/entrée_campus_2.png';
 
    // Entrée batiment
    var entree_batimentLink = document.getElementById('Entrée batiment');
    var entree_batimentCount = 0; // initialisation du compteur de clics
-   var entree_batimentURL = '../css/icons/layers_icons/entrée_campus_2.png';
+   var entree_batimentURL = 'css/icons/layers_icons/entrée_campus_2.png';
 
   // Couche Pole santé et prévention
 
   var polesanteCount = 0; // initialisation du compteur de clics
   var polesanteLink = document.getElementById('Pôle santé et prévention');
-  var polesanteURL = '../css/icons/layers_icons/sante_marker.png';
+  var polesanteURL = 'css/icons/layers_icons/sante_marker.png';
 
   // Couche Assistants de prévention
   var assistantpreventionCount = 0; // initialisation du compteur de clics
   var assistantpreventionLink = document.getElementById('Assistants de prévention');
-  var assistantpreventionURL = '../css/icons/layers_icons/sante_marker.png';
+  var assistantpreventionURL = 'css/icons/layers_icons/sante_marker.png';
   
   // Couche Assistants de prévention
   var rhsanteCount = 0; // initialisation du compteur de clics
   var rhsanteLink = document.getElementById('Ressources humaines');
-  var rhsanteURL = '../css/icons/layers_icons/sante_marker.png';
+  var rhsanteURL = 'css/icons/layers_icons/sante_marker.png';
 
   // Lineaire PMR
   var lineairePMRCount = 0; // initialisation du compteur de clics
@@ -1404,7 +1404,7 @@ function afficherPopupObjet(selectedObjet) {
   var metroCount = 0; // initialisation du compteur de clics
   var metroColor = 'red';
   var metroIconSize = [1.5, 13, 4, 22, 80];
-  var metroURL = '../css/icons/layers_icons/metro_picto.png';
+  var metroURL = 'css/icons/layers_icons/metro_picto.png';
   
   // Linéaire Bus
   var busLineCount = 0; // initialisation du compteur de clics
@@ -1415,7 +1415,7 @@ function afficherPopupObjet(selectedObjet) {
   var busCount = 0; // initialisation du compteur de clics
   var busColor = 'green';
   var busIconSize = [1.5, 13, 4, 22, 80];
-  var busURL = '../css/icons/layers_icons/bus_marker.png';
+  var busURL = 'css/icons/layers_icons/bus_marker.png';
   
   // Vélostar
   var velostarCount = 0; // initialisation du compteur de clics
@@ -1547,7 +1547,7 @@ function afficherPopupObjet(selectedObjet) {
     if(!map.getSource("bati3D")) {
       map.addSource("bati3D", {
         type: "geojson",
-        data: "../data/bati/Bati_3D.geojson?v="+version
+        data: "data/bati/Bati_3D.geojson?v="+version
       });
     }
 
@@ -1673,7 +1673,7 @@ function afficherPopupObjet(selectedObjet) {
     if(!map.getSource("bati2D")) {
       map.addSource("bati2D", {
         type: "geojson",
-        data: "../data/bati/Bati_2D.geojson?v="+version
+        data: "data/bati/Bati_2D.geojson?v="+version
       });
     }
 
@@ -1806,7 +1806,7 @@ function afficherPopupObjet(selectedObjet) {
      }
 
      var fleche = document.createElement('img');
-     /*fleche.setAttribute('src', '../css/icons/fleche.png');
+     /*fleche.setAttribute('src', 'css/icons/fleche.png');
      fleche.setAttribute('id', 'fleche');
      fleche.style.width = '20px';
      fleche.style.position = 'absolute';
@@ -1865,13 +1865,13 @@ function afficherPopupObjet(selectedObjet) {
 function addPictoFondDeCarte() {
 	
   // Charger les données GeoJSON des éléments remarquables
-  fetch("../data/fondcarte/elements_remarquables/elements_remarquables.geojson?v=" + version)
+  fetch("data/fondcarte/elements_remarquables/elements_remarquables.geojson?v=" + version)
     .then(response => response.json())
     .then(data => {
       data.features.forEach(feature => {
         const iconName = feature.properties.icon;
         const size = feature.properties.size;
-        const iconImage = `../css/icons/iconfond/elements_remarquables/${iconName}.png`;
+        const iconImage = `css/icons/iconfond/elements_remarquables/${iconName}.png`;
 
         //Picto permanent 2_P
         if (!map.hasImage(iconName)) {
@@ -1904,12 +1904,12 @@ function addPictoFondDeCarte() {
     });
   
   // Charger les données GeoJSON des lettres des bâtiments
-  fetch("../data/fondcarte/lettre_batiment.geojson?v=" + version)
+  fetch("data/fondcarte/lettre_batiment.geojson?v=" + version)
     .then(response => response.json())
     .then(data => {
       data.features.forEach(feature => {
         const iconName = feature.properties.icon;
-        const iconImage = `../css/icons/iconfond/lettre_batiment/${iconName}.png`;
+        const iconImage = `css/icons/iconfond/lettre_batiment/${iconName}.png`;
 
   
 
@@ -1943,7 +1943,7 @@ function addPictoFondDeCarte() {
     });
 
   // Picto permanent Caféteria
-  map.loadImage("../css/icons/iconfond/cafe.png").then(response => {
+  map.loadImage("css/icons/iconfond/cafe.png").then(response => {
     const image = response.data;
     if (!map.hasImage("cafe")) {
       map.addImage('cafe', image);
@@ -1953,7 +1953,7 @@ function addPictoFondDeCarte() {
       "type": "symbol",
       "source": {
         "type": "geojson",
-        "data": "../data/fondcarte/cafeteria.geojson?v="+version
+        "data": "data/fondcarte/cafeteria.geojson?v="+version
       },
       "layout": {
         "visibility": 'visible',
@@ -1966,7 +1966,7 @@ function addPictoFondDeCarte() {
 
   // Ajouter d'autres pictogrammes permanents de la même manière que ci-dessus pour les autres catégories (bibliothèque, restaurant universitaire, parking, etc.)
   // Picto permanent Bibliothèque
-  map.loadImage("../css/icons/iconfond/biblio.png").then(response => {
+  map.loadImage("css/icons/iconfond/biblio.png").then(response => {
     const image = response.data;
     if (!map.hasImage("biblio")) {
       map.addImage('biblio', image);
@@ -1976,7 +1976,7 @@ function addPictoFondDeCarte() {
       "type": "symbol",
       "source": {
         "type": "geojson",
-        "data": "../data/fondcarte/biblio.geojson?v="+version
+        "data": "data/fondcarte/biblio.geojson?v="+version
       },
       "layout": {
         "visibility": 'visible',
@@ -1988,7 +1988,7 @@ function addPictoFondDeCarte() {
   });
 
   // Picto permanent Restaurant U
-  map.loadImage("../css/icons/iconfond/resto.png").then(response => {
+  map.loadImage("css/icons/iconfond/resto.png").then(response => {
     const image = response.data;
     if (!map.hasImage("resto")) {
       map.addImage('resto', image);
@@ -1998,7 +1998,7 @@ function addPictoFondDeCarte() {
       "type": "symbol",
       "source": {
         "type": "geojson",
-        "data": "../data/fondcarte/ru.geojson?v="+version
+        "data": "data/fondcarte/ru.geojson?v="+version
       },
       "layout": {
         "visibility": 'visible',
@@ -2010,7 +2010,7 @@ function addPictoFondDeCarte() {
   });
 
   // Picto permanent Parking
-  map.loadImage("../css/icons/iconfond/parking.png").then(response => {
+  map.loadImage("css/icons/iconfond/parking.png").then(response => {
     const image = response.data;
     if (!map.hasImage("parking")) {
       map.addImage('parking', image);
@@ -2020,7 +2020,7 @@ function addPictoFondDeCarte() {
       "type": "symbol",
       "source": {
         "type": "geojson",
-        "data": "../data/fondcarte/parking.geojson?v="+version
+        "data": "data/fondcarte/parking.geojson?v="+version
       },
       "layout": {
         "visibility": 'visible',
@@ -2032,7 +2032,7 @@ function addPictoFondDeCarte() {
   });
 
   // Picto permanent Metro
-  map.loadImage("../css/icons/iconfond/metro.png").then(response => {
+  map.loadImage("css/icons/iconfond/metro.png").then(response => {
     const image = response.data;
     if (!map.hasImage("metro")) {
       map.addImage('metro', image);
@@ -2042,7 +2042,7 @@ function addPictoFondDeCarte() {
       "type": "symbol",
       "source": {
         "type": "geojson",
-        "data": "../data/fondcarte/metro.geojson?v="+version
+        "data": "data/fondcarte/metro.geojson?v="+version
       },
       "layout": {
         "visibility": 'visible',
@@ -2054,7 +2054,7 @@ function addPictoFondDeCarte() {
   });
 
   // Picto permanent Pôle Santé
-  map.loadImage("../css/icons/iconfond/sante.png").then(response => {
+  map.loadImage("css/icons/iconfond/sante.png").then(response => {
     const image = response.data;
     if (!map.hasImage("sante")) {
       map.addImage('sante', image);
@@ -2064,7 +2064,7 @@ function addPictoFondDeCarte() {
       "type": "symbol",
       "source": {
         "type": "geojson",
-        "data": "../data/fondcarte/polesante.geojson?v="+version
+        "data": "data/fondcarte/polesante.geojson?v="+version
       },
       "layout": {
         "visibility": 'visible',
@@ -2076,7 +2076,7 @@ function addPictoFondDeCarte() {
   });
 
   // Picto permanent Piscine
-  map.loadImage("../css/icons/iconfond/piscine.png").then(response => {
+  map.loadImage("css/icons/iconfond/piscine.png").then(response => {
     const image = response.data;
     if (!map.hasImage("piscine")) {
       map.addImage('piscine', image);
@@ -2086,7 +2086,7 @@ function addPictoFondDeCarte() {
       "type": "symbol",
       "source": {
         "type": "geojson",
-        "data": "../data/fondcarte/piscine.geojson?v="+version
+        "data": "data/fondcarte/piscine.geojson?v="+version
       },
       "layout": {
         "visibility": 'visible',
@@ -2098,7 +2098,7 @@ function addPictoFondDeCarte() {
   });
 
   // Picto permanent Bus
-  map.loadImage("../css/icons/iconfond/bus.png").then(response => {
+  map.loadImage("css/icons/iconfond/bus.png").then(response => {
     const image = response.data;
     if (!map.hasImage("bus")) {
       map.addImage('bus', image);
@@ -2108,7 +2108,7 @@ function addPictoFondDeCarte() {
       "type": "symbol",
       "source": {
         "type": "geojson",
-        "data": "../data/fondcarte/bus.geojson?v="+version
+        "data": "data/fondcarte/bus.geojson?v="+version
       },
       "layout": {
         "visibility": 'visible',
@@ -2126,7 +2126,7 @@ function addPictoFondDeCarte() {
 ////////// Fonction ajoutant un point (de type épingle) ////////// 
   function addPointOverlay(name, iconSize) {
 
-    var iconURL = '../css/icons/layers_icons/recherche.png'
+    var iconURL = 'css/icons/layers_icons/recherche.png'
     var markerOffset = [-15, -20];
     if (iconSize.toString() === '1,13,0.1,25,1.5') {
       markerOffset = [-30, -50];
@@ -2167,7 +2167,7 @@ function addPictoFondDeCarte() {
 ////////// Fonction ajoutant un point (de type épingle) ////////// 
   function addPointOverlay(name, iconSize) {
 
-    var iconURL = '../css/icons/layers_icons/recherche.png'
+    var iconURL = 'css/icons/layers_icons/recherche.png'
     var markerOffset = [-15, -20]; // Décalage du picto
     if (iconSize.toString() === '1,13,0.1,25,1.5') {
       markerOffset = [-30, -50];
@@ -2821,7 +2821,7 @@ boutonPrinter.addEventListener('click', function () {
     $.ajax({
       'async': false,
       'global': false,
-      'url': "../data/lineaire.geojson?v="+version,
+      'url': "data/lineaire.geojson?v="+version,
       'dataType': "json",
       'success': function (data) {
         jsonLines = data;
@@ -2847,46 +2847,46 @@ boutonPrinter.addEventListener('click', function () {
 const getGeoJSON = (nomFichier) => fetch(nomFichier).then(res => res.json()).then(res => res.features);
 
 const geojsons = [
-  getGeoJSON("../data/filtre/acces_PMR.geojson"),
-  getGeoJSON("../data/filtre/amphi.geojson"),
-  getGeoJSON("../data/filtre/arret_bus_pts.geojson"),
-  getGeoJSON("../data/filtre/arret_metro_pts.geojson"),
-  getGeoJSON("../data/filtre/ascenseur.geojson"),
-  getGeoJSON("../data/filtre/asso_art_spor.geojson"),
-  getGeoJSON("../data/filtre/asso_filiere.geojson"),
-  getGeoJSON("../data/filtre/asso_mstr_doc.geojson"),
-  getGeoJSON("../data/filtre/asso_solidarite.geojson"),
-  getGeoJSON("../data/filtre/biblio.geojson"),
-  getGeoJSON("../data/filtre/cafet_distrib.geojson"),
-  getGeoJSON("../data/filtre/copieur.geojson"),
-  getGeoJSON("../data/filtre/entree_bat.geojson"), 
-  getGeoJSON("../data/filtre/entree_campus.geojson"),
-  getGeoJSON("../data/filtre/eqpmt_sportif.geojson"),
-  getGeoJSON("../data/filtre/esp_detente.geojson"),
-  getGeoJSON("../data/filtre/labo.geojson"),
-  getGeoJSON("../data/filtre/lieu_cultu.geojson"),
-  getGeoJSON("../data/filtre/micro_ondes.geojson"),
-  getGeoJSON("../data/filtre/oeuvres.geojson"),
-  getGeoJSON("../data/filtre/parking_velo.geojson"),
-  getGeoJSON("../data/filtre/parking_voiture.geojson"),
-  getGeoJSON("../data/filtre/resid_univ.geojson"),
-  getGeoJSON("../data/filtre/ru.geojson"),
-  getGeoJSON("../data/filtre/salle_e0.geojson"),
-  getGeoJSON("../data/filtre/salle_e1.geojson"),
-  getGeoJSON("../data/filtre/salle_e2.geojson"),
-  getGeoJSON("../data/filtre/salle_e3.geojson"),
-  getGeoJSON("../data/filtre/salle_e4.geojson"),
-  getGeoJSON("../data/filtre/salle_e5.geojson"),
-  getGeoJSON("../data/filtre/salle_e6.geojson"),
-  getGeoJSON("../data/filtre/salle_e7.geojson"),
-  getGeoJSON("../data/filtre/salle_info.geojson"),
-  getGeoJSON("../data/filtre/salle_spe.geojson"),
-  getGeoJSON("../data/filtre/sante.geojson"),
-  getGeoJSON("../data/filtre/scol.geojson"),
-  getGeoJSON("../data/filtre/services.geojson"),
-  getGeoJSON("../data/filtre/station_velostar.geojson"),
-  getGeoJSON("../data/filtre/wc.geojson"),
-  getGeoJSON("../data/fondcarte/lettre_batiment.geojson")
+  getGeoJSON("data/filtre/acces_PMR.geojson"),
+  getGeoJSON("data/filtre/amphi.geojson"),
+  getGeoJSON("data/filtre/arret_bus_pts.geojson"),
+  getGeoJSON("data/filtre/arret_metro_pts.geojson"),
+  getGeoJSON("data/filtre/ascenseur.geojson"),
+  getGeoJSON("data/filtre/asso_art_spor.geojson"),
+  getGeoJSON("data/filtre/asso_filiere.geojson"),
+  getGeoJSON("data/filtre/asso_mstr_doc.geojson"),
+  getGeoJSON("data/filtre/asso_solidarite.geojson"),
+  getGeoJSON("data/filtre/biblio.geojson"),
+  getGeoJSON("data/filtre/cafet_distrib.geojson"),
+  getGeoJSON("data/filtre/copieur.geojson"),
+  getGeoJSON("data/filtre/entree_bat.geojson"), 
+  getGeoJSON("data/filtre/entree_campus.geojson"),
+  getGeoJSON("data/filtre/eqpmt_sportif.geojson"),
+  getGeoJSON("data/filtre/esp_detente.geojson"),
+  getGeoJSON("data/filtre/labo.geojson"),
+  getGeoJSON("data/filtre/lieu_cultu.geojson"),
+  getGeoJSON("data/filtre/micro_ondes.geojson"),
+  getGeoJSON("data/filtre/oeuvres.geojson"),
+  getGeoJSON("data/filtre/parking_velo.geojson"),
+  getGeoJSON("data/filtre/parking_voiture.geojson"),
+  getGeoJSON("data/filtre/resid_univ.geojson"),
+  getGeoJSON("data/filtre/ru.geojson"),
+  getGeoJSON("data/filtre/salle_e0.geojson"),
+  getGeoJSON("data/filtre/salle_e1.geojson"),
+  getGeoJSON("data/filtre/salle_e2.geojson"),
+  getGeoJSON("data/filtre/salle_e3.geojson"),
+  getGeoJSON("data/filtre/salle_e4.geojson"),
+  getGeoJSON("data/filtre/salle_e5.geojson"),
+  getGeoJSON("data/filtre/salle_e6.geojson"),
+  getGeoJSON("data/filtre/salle_e7.geojson"),
+  getGeoJSON("data/filtre/salle_info.geojson"),
+  getGeoJSON("data/filtre/salle_spe.geojson"),
+  getGeoJSON("data/filtre/sante.geojson"),
+  getGeoJSON("data/filtre/scol.geojson"),
+  getGeoJSON("data/filtre/services.geojson"),
+  getGeoJSON("data/filtre/station_velostar.geojson"),
+  getGeoJSON("data/filtre/wc.geojson"),
+  getGeoJSON("data/fondcarte/lettre_batiment.geojson")
 ];
 
 const finalGeoJSON = {
@@ -2920,7 +2920,7 @@ Promise.all(geojsons).then(allGeoJsons => { //à l'intérieur de cette fonction 
       type: "fill",
       source: {
         type: "geojson",
-        data: "../data/fondcarte/grass.geojson?v="+version
+        data: "data/fondcarte/grass.geojson?v="+version
       },
       paint: {
         'fill-color': '#9FE19C',
@@ -2940,7 +2940,7 @@ Promise.all(geojsons).then(allGeoJsons => { //à l'intérieur de cette fonction 
       type: "fill",
       source: {
         type: "geojson",
-        data: "../data/fondcarte/piste_athle.geojson?v="+version
+        data: "data/fondcarte/piste_athle.geojson?v="+version
       },
       paint: {
         'fill-color': '#C09C83',
@@ -2952,7 +2952,7 @@ Promise.all(geojsons).then(allGeoJsons => { //à l'intérieur de cette fonction 
       type: "line",
       source: {
         type: "geojson",
-        data: "../data/fondcarte/terrain_football.geojson?v="+version
+        data: "data/fondcarte/terrain_football.geojson?v="+version
       },
       "paint": {
         'line-color': '#FFFFFF',
@@ -3374,7 +3374,7 @@ function addRealTimeBus() {
         searchItem = POI[i]; //Si un POI correspondant est trouvé (dans la liste POI), il est assigné à searchItem
 
         //charge une image qui sera utilisée comme icône pour le POI recherché
-        map.loadImage('../css/icons/layers_icons/recherche.png').then(response => {
+        map.loadImage('css/icons/layers_icons/recherche.png').then(response => {
           const image = response.data;
           map.addImage(searchLayerId + 'image', image);
 
